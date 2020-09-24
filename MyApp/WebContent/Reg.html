@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration form</title>
+<link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<script>
+/* function validate()
+{
+    if(document.f.new.value!=document.f.confirm.value){
+    alert("New Password and Confirm Password should be same! Re-enter confirm-password!");
+    document.f.confirm.value="";
+    return false;
+}
+return true; */
+}
+</script>
+<body bgcolor="#E6E6FA">
+<h1>Registration Form</h1>
+<body>
+	<form action="InsertSign" method="post">
+		<table>
+			<tr>
+				<td>First Name:</td>
+				<td><input type="text" name="firstname" placeholder="Enter FirstName" required size="35"></td>
+			</tr>
+			<tr>
+				<td>Last Name:</td>
+				<td><input type="text" name="lastname" placeholder="Enter LastName" required size="35"></td>
+			</tr>
+			<tr>
+				<td> <label >Gender:</label></td> 
+			<td> <input type="radio" name="gender" value="male">Male <input
+			type="radio" name="gender" value="female">Female<br /></td>
+			</tr>
+			
+			<tr>
+				<td>Dob:</td>
+				<td><input type="date" name="dob" required style="width:270px"></td>
+			</tr>
+			<tr>
+				<td>Email:</td>
+				<td><input type="email" name="email" placeholder="Enter Email" required size="35"></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input type="password" name="password" placeholder="Enter Password" required size="35"></td>
+			</tr>
+			<tr>
+				<td>Confirm Password:</td>
+				<td><input type="password" name="confirmpassword" placeholder="Confirm Password" required size="35"></td>
+			</tr>
+		</table>
+		<button type="submit" value="Submit" id="button" onsubmit="return validate();">Register</button>
+		
+		<a href="index.html">Back to Home</a>
+	</form>
+</body>
+</html>
